@@ -1,0 +1,2 @@
+System information has been gathered. Here'sthe summary:
+Date and Time: date + m%d%Y% + H%M%S%
