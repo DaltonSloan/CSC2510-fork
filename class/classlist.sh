@@ -49,7 +49,7 @@ if [ "$user_found" = false ]; then
                 sleep 2
                 echo "$username" >> "$list_of_usernames"
                 echo "User $username added!"
-		printf "\n"
+                printf "\n"
                 read -p "Would you like to sort the list? ('yes' or 'no'): " sort_answer
                 while true; do
                     case "$sort_answer" in
@@ -58,27 +58,26 @@ if [ "$user_found" = false ]; then
                             sleep 2
                             sort -o "$list_of_usernames" "$list_of_usernames"
                             echo "List sorted!"
-			    echo "Exiting..."
-			    sleep 1
+                            echo "Exiting..."
+                            sleep 1
                             exit 0
                             ;;
                         no | n | N | No)
                             echo "List not sorted."
-			    echo "Exiting..."
-			    sleep 1
+                            echo "Exiting..."
+                            sleep 1
                             exit 0
                             ;;
                         *)
                             read -p "Invalid input. Please enter 'yes' or 'no': " sort_answer
-
                             ;;
                     esac
                 done
                     ;;
             no | n | N | No | NO)
                 echo "User $username not added."
-		echo "Exiting..."
-		sleep 1
+                echo "Exiting..."
+                sleep 1
                 exit 0
                 ;;
             *)
